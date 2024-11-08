@@ -43,6 +43,7 @@ class AgendoorController extends Controller
     public function store(Request $request)
     {
         $akses = Akses::where('namaakses', 'agendoor')->first();
+        // dd($akses);
         $validatedData = $request->validate([
             'namaagen' => 'required|max:50',
             'alamatagen' => 'required|max:100',
