@@ -1,0 +1,24 @@
+.ukuran_gambar {
+    height: 200px;
+    width: 200px;
+}
+
+tr.hide-table-padding td {
+    padding: 0;
+}
+
+.expand-tombol {
+    position: relative;
+}
+
+.detail-toggle .expand-tombol:after {
+    position: absolute;
+    left: .75rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '-';
+}
+
+.detail-toggle.buka .expand-tombol:after {
+    content: '+';
+}
